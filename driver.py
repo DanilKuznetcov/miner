@@ -11,7 +11,7 @@ class CustomBrowserManager:
     '''Класс браузера'''
 
     def __init__(self, chrome=False, web_driver=None) -> None:
-        self.broswer = webdriver.Chrome('/home/danil/Documents/Doploma/Panin/SelenuimVKParser/chromedriver')
+        self.broswer = webdriver.Chrome('./chromedriver')
 
     def load_items(self, item_container, args_find: dict, count: int):
         '''Генератор для получаения элементов с загрузкой их по Ajax'''

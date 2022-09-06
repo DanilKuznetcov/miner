@@ -1,10 +1,10 @@
-import argparse
 from driver import CustomBrowserManager
 import Post_getter
 
 brows_manage = CustomBrowserManager()
 reader_manager = Post_getter.PostReader()
 reader = reader_manager.create_reader()
+
 
 c = 1
 for post in reader:
@@ -14,4 +14,3 @@ for post in reader:
     for comment in comments:
         print(f'{c}: ', comment)
     c += 1
-

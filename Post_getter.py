@@ -2,7 +2,7 @@ import csv
 
 
 class PostReader:
-
+    '''Класс для работы с CSV'''
     def __init__(self, chrome=False, web_driver=None) -> None:
         self.path = './2021-12-11.csv'
 
